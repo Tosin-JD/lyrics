@@ -37,7 +37,11 @@ SECRET_KEY = '57(5tf@)535-iax#_t)5*akx#(sohvjr*mfemm^0-wa5cr3^qc'
 DEBUG = False
 
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+                    'https://coollyrics.herokuapp.com/',
+                    'coollyrics.herokuapp.com/'.
+                    '127.0.0.1'
+                ]
 
 
 # Application definition
