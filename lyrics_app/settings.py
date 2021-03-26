@@ -32,6 +32,7 @@ DEBUG = True
 ALLOWED_HOSTS = [
                     'https://coollyrics.herokuapp.com/',
                     'coollyrics.herokuapp.com/',
+                    'coollyrics.herokuapp.com',
                     '127.0.0.1',
                 ]
 
