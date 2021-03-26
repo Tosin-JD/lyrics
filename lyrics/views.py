@@ -117,15 +117,30 @@ class DeleteChorus(generic.DeleteView):
     fields = ('chorus',)
     template_name = 'lyrics/sub_delete.html'
 
+    def get_success_url(self):
+        lyric = self.object.lyric 
+        return reverse_lazy( 'lyric:complete', kwargs={'lyric.slug': lyric.id})
+
 
 class DeleteVerse(generic.DeleteView):
     model = Verse
     fields = ('verse',)
     template_name = 'lyrics/sub_delete.html'
 
+    def get_success_url(self):
+        lyric = self.object.lyric 
+        return reverse_lazy( 'lyric:complete', kwargs={'lyric.slug': lyric.id})
+
 
 class DeleteBridge(generic.DeleteView):
     model = Bridge
     fields = ('bridge',)
     template_name = 'lyrics/sub_delete.html'
+
+    def get_success_url(self):
+        lyric = self.object.lyric 
+        return reverse_lazy( 'lyric:complete', kwargs={'lyric.slug': lyric.id})
+
+
+
 
