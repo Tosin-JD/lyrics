@@ -1,0 +1,37 @@
+{% extends  'base.html' %}
+
+
+{% block content %}
+
+<div class="container">
+    <section>
+        <div class="mt-5">
+            <div class="row">
+                <div class="col-sm-2"></div>
+                <div class="col-sm-5">
+                    <div class="bg-dark shadow">
+                        <form method="POST">
+                            {% csrf_token %}
+
+                            <div class="py-3 px-2">
+                                <div class="form-group">
+                                    Are you sure you want to delete <br><br>
+                                    {{ object }}?
+                                </div>
+
+                                <input type="submit" value="Yes" class="btn btn-danger px-3 py-2 y-2">
+                                <a href="{% url 'lyrics:complete' object.lyric.slug %}" class="btn btn-light px-4 py-2 y-2">No</a>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+                <div class="col-sm-6"></div>
+            </div>
+        </div>
+    </section>
+</div>
+
+
+{% endblock %}
+
