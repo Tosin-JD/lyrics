@@ -21,20 +21,12 @@ TEMPLATE_DIR = os.path.join(BASE_DIR, 'templates')
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 
-# Read SECRET_KEY from an environment variable
-# SECRET_KEY = os.environ['SECRET_KEY']
-
-# OR
-
-# Read secret key from a file
-# with open('/etc/secret_key.txt') as f:
-#    SECRET_KEY = f.read().strip()
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = '57(5tf@)535-iax#_t)5*akx#(sohvjr*mfemm^0-wa5cr3^qc'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 
 ALLOWED_HOSTS = [
