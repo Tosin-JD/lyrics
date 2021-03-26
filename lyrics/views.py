@@ -119,7 +119,7 @@ class DeleteChorus(generic.DeleteView):
 
     def get_success_url(self):
         lyric = self.object.lyric 
-        return reverse_lazy( 'lyrics:complete', kwargs={'lyric.slug': lyric.id})
+        return reverse_lazy( 'lyrics:complete', kwargs={'slug': lyric.slug})
 
 
 class DeleteVerse(generic.DeleteView):
@@ -129,7 +129,7 @@ class DeleteVerse(generic.DeleteView):
 
     def get_success_url(self):
         lyric = self.object.lyric 
-        return reverse_lazy( 'lyrics:complete', kwargs={'lyric.slug': lyrics.id})
+        return reverse_lazy( 'lyrics:complete', kwargs={'slug': lyrics.slug})
 
 
 class DeleteBridge(generic.DeleteView):
@@ -139,7 +139,7 @@ class DeleteBridge(generic.DeleteView):
 
     def get_success_url(self):
         lyric = self.object.lyric 
-        return reverse_lazy( 'lyrics:complete', kwargs={'lyric.slug': lyric.id})
+        return reverse_lazy( 'lyrics:complete', kwargs={'slug': lyric.slug})
 
 
 
