@@ -1,1 +1,1 @@
-web: gunicorn lyric_app.wsgi --log-file-
+web: gunicorn lyrics_app.wsgi --log-file-
